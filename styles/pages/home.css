@@ -1,0 +1,10 @@
+.intro {
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  color: hsl(var(--white-color-hsl));
+
+}
