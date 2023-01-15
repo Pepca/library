@@ -64,7 +64,7 @@
 
   transform: translate(0, -50%);
 
-  transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;
+  transition: left 100ms ease-out, opacity 100ms ease-out, visibility 100ms ease-out;
 }
 
 ._not-empty .input-element-input label {

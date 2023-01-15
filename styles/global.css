@@ -42,6 +42,10 @@ body {
   /*background-repeat: no-repeat;*/
 }
 
+.responsive-background-image img {
+  max-width: none;
+}
+
 .responsive-background-image:before {
   content: '';
 
