@@ -77,7 +77,8 @@ body {
   max-width: var(--container-max-width);
 
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 ._section-title {

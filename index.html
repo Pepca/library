@@ -122,25 +122,26 @@
       <form action="index.html" class="intro-search">
         <div class="intro-search__input">
           <div class="input-element" data-input-element="search">
-            <label for="search" class="input-element-icon">
-              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15 15.5C17.7614 15.5 20 13.2614 20 10.5C20 7.73858 17.7614 5.5 15 5.5C12.2386 5.5 10 7.73858 10 10.5C10 13.2614 12.2386 15.5 15 15.5Z"
-                  fill="black" fill-opacity="0.5"/>
-                <path d="M15 18C7.375 18 5 23 5 23V25.5H25V23C25 23 22.625 18 15 18Z" fill="black" fill-opacity="0.5"/>
-              </svg>
-            </label>
+            <!--            <label for="search" class="input-element-icon">-->
+            <!--              <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+            <!--                <path-->
+            <!--                  d="M15 15.5C17.7614 15.5 20 13.2614 20 10.5C20 7.73858 17.7614 5.5 15 5.5C12.2386 5.5 10 7.73858 10 10.5C10 13.2614 12.2386 15.5 15 15.5Z"-->
+            <!--                  fill="black" fill-opacity="0.5"/>-->
+            <!--                <path d="M15 18C7.375 18 5 23 5 23V25.5H25V23C25 23 22.625 18 15 18Z" fill="black" fill-opacity="0.5"/>-->
+            <!--              </svg>-->
+            <!--            </label>-->
             <div class="input-element-input">
               <label for="search">Поиск</label>
-              <input type="text" id="search" name="search" data-input-element-input>
+              <input type="text" id="search" name="search" data-input-element-input title="Поиск">
             </div>
-            <button type="button" class="input-element-button" data-drop-down="input-search-recommendation">
+            <button type="button" class="input-element-button" data-drop-down="input-search-recommendation"
+                    title="Открыть список рекомендаций">
             <span class="_burger-menu">
               <i></i>
             </span>
             </button>
           </div>
-          <button class="intro-search__button _yellow-button" type="button">
+          <button class="intro-search__button _yellow-button" type="submit" title="Поиск">
             <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M38.5509 34.5741L31.4114 27.4345C32.8866 25.2113 33.75 22.5492 33.75 19.6875C33.75 11.9334 27.4416 5.625 19.6875 5.625C11.9334 5.625 5.625 11.9334 5.625 19.6875C5.625 27.4416 11.9334 33.75 19.6875 33.75C22.5492 33.75 25.2113 32.8866 27.4345 31.4114L34.5741 38.5509C35.6709 39.6492 37.4541 39.6492 38.5509 38.5509C39.6492 37.4527 39.6492 35.6723 38.5509 34.5741ZM9.84375 19.6875C9.84375 14.2594 14.2594 9.84375 19.6875 9.84375C25.1156 9.84375 29.5312 14.2594 29.5312 19.6875C29.5312 25.1156 25.1156 29.5312 19.6875 29.5312C14.2594 29.5312 9.84375 25.1156 9.84375 19.6875Z"
@@ -151,46 +152,48 @@
         <div class="intro-search-recommendation" id="input-search-recommendation">
           <ul class="intro-search-recommendation-list">
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Научная литература</button>
+              <button type="button" data-input-recommendation="search" title="Научная литература">Научная литература
+              </button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">История</button>
+              <button type="button" data-input-recommendation="search" title="История">История</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Психология</button>
+              <button type="button" data-input-recommendation="search" title="Психология">Психология</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Детектив</button>
+              <button type="button" data-input-recommendation="search" title="Детектив">Детектив</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Фантастика</button>
+              <button type="button" data-input-recommendation="search" title="Фантастика">Фантастика</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Фэнтези</button>
+              <button type="button" data-input-recommendation="search" title="Фэнтези">Фэнтези</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Художественная</button>
+              <button type="button" data-input-recommendation="search" title="Художественная">Художественная</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Научная литература</button>
+              <button type="button" data-input-recommendation="search" title="Научная литература">Научная литература
+              </button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">История</button>
+              <button type="button" data-input-recommendation="search" title="История">История</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Психология</button>
+              <button type="button" data-input-recommendation="search" title="Психология">Психология</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Детектив</button>
+              <button type="button" data-input-recommendation="search" title="Детектив">Детектив</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Фантастика</button>
+              <button type="button" data-input-recommendation="search" title="Фантастика">Фантастика</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Фэнтези</button>
+              <button type="button" data-input-recommendation="search" title="Фэнтези">Фэнтези</button>
             </li>
             <li class="intro-search-recommendation-item">
-              <button type="button" data-input-recommendation="search">Художественная</button>
+              <button type="button" data-input-recommendation="search" title="Художественная">Художественная</button>
             </li>
           </ul>
         </div>
@@ -204,7 +207,105 @@
       </div>
     </div>
     <footer class="footer">
-      <div class="footer__wrapper _container">footer</div>
+      <div class="footer__wrapper _container">
+        <nav class="footer-nav">
+          <div class="footer-nav-menu">
+            <h3 class="footer-nav-menu__title">Навигация</h3>
+            <ul class="footer-nav-menu-list">
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Главная">Главная</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Каталог">Каталог</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Избранное">Избранное</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Корзина">Корзина</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Профиль">Профиль</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" title="Техническая поддержка">Техническая поддержка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-menu">
+            <h3 class="footer-nav-menu__title">Контактные данные</h3>
+            <ul class="footer-nav-menu-list">
+              <li class="footer-nav-menu-list-item">
+                <span>Телефон:</span>
+                <a href="tel:80000000000" title="8 (000) 000-00-00">8 (000) 000-00-00</a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <span>Эл. почта:</span>
+                <a href="mailto:library_off@gmail.com" title="Каталог">library_off@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-menu _social">
+            <ul class="footer-nav-menu-list">
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" rel="noopener" target="_blank" title="Telegram">
+                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_69_328)">
+                      <path
+                        d="M17.6875 26.3478L35.2461 41.7971C35.449 41.9767 35.6952 42.1005 35.9604 42.1562C36.2256 42.212 36.5008 42.1978 36.7589 42.115C37.0169 42.0323 37.249 41.8838 37.4324 41.6843C37.6158 41.4847 37.7441 41.2409 37.8047 40.9767L45.1485 8.90643C45.21 8.63024 45.1955 8.34251 45.1063 8.07396C45.0171 7.80541 44.8567 7.56612 44.6421 7.38163C44.4275 7.19715 44.1669 7.07439 43.888 7.02647C43.6091 6.97855 43.3225 7.00727 43.0586 7.10955L7.00393 21.2697C5.55862 21.8361 5.75393 23.9455 7.27737 24.258L17.6875 26.3478Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M17.6875 26.3477L44.2695 7.14844" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                      <path
+                        d="M26.457 34.0625L20.3633 40.1563C20.1459 40.377 19.8678 40.5281 19.5643 40.5905C19.2608 40.6528 18.9456 40.6235 18.6588 40.5062C18.372 40.389 18.1265 40.1891 17.9536 39.9321C17.7806 39.675 17.688 39.3723 17.6875 39.0625V26.3477"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_69_328">
+                        <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" rel="noopener" target="_blank" title="Twitter">
+                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M34.3672 7.8125C36.5449 7.8125 38.6445 8.7207 40.1289 10.3125L40.7246 10.9473L41.5742 10.7812C42.0137 10.6934 42.4434 10.5957 42.873 10.4785C42.7754 10.6152 42.3164 11.0742 41.7988 11.5332C41.3594 11.9238 40.0605 13.1445 40.0605 13.1445C40.0605 13.1445 41.3301 13.5449 42.1211 13.6328C42.9121 13.7207 43.8203 13.5742 43.9668 13.5547C43.6934 13.7793 43.2051 14.1211 42.9121 14.3262L42.2285 14.8242L42.2676 15.6641C42.2871 16.0352 42.2969 16.4258 42.2969 16.8164C42.2969 19.7656 41.7207 22.8516 40.6367 25.752C39.4941 28.7988 37.8535 31.5527 35.7539 33.9355C33.5078 36.4844 30.8516 38.4766 27.834 39.873C24.5332 41.4062 20.8711 42.1777 16.9453 42.1777C14.123 42.1777 11.3398 41.709 8.69336 40.791C9.66016 40.6055 10.6074 40.3418 11.5352 40.0195C13.6543 39.2773 15.627 38.1934 17.4043 36.7969L20.8516 34.0918L16.4668 34.0137C13.918 33.9648 11.6133 32.7051 10.1875 30.7031C10.9004 30.6543 11.6035 30.5273 12.2871 30.3418L18.2148 28.3691L12.1895 27.3047C9.29883 26.7285 7.0332 24.5801 6.20313 21.8555C6.96484 22.0508 7.70703 22.1289 8.53711 22.1777C8.53711 22.1777 11.6426 22.3145 13.9863 22.168C12.7168 21.5625 9.45508 19.3164 9.45508 19.3164C7.25781 17.8418 5.93945 15.3906 5.93945 12.7344C5.93945 12.1094 6.01758 11.4844 6.1543 10.8789C8.29297 13.0664 10.7441 14.8926 13.4883 16.2988C17.1016 18.1641 20.998 19.209 25.0703 19.4141L27.1406 19.5215L26.6719 17.5C26.5352 16.9238 26.4668 16.3184 26.4668 15.6934C26.4668 11.3574 30.0117 7.8125 34.3672 7.8125ZM34.3672 6.25C29.1426 6.25 24.9141 10.4883 24.9141 15.7129C24.9141 16.4551 24.9922 17.1777 25.1582 17.8711C17.2969 17.4805 10.3242 13.7109 5.66602 7.97852C4.85547 9.375 4.38672 11.0059 4.38672 12.7344C4.38672 16.0156 6.05664 18.916 8.5957 20.6152C7.04297 20.5762 5.57812 20.1465 4.30859 19.4336C4.30859 19.4727 4.30859 19.5117 4.30859 19.5508C4.30859 24.1406 7.57031 27.959 11.8965 28.8281C11.1055 29.043 10.2656 29.1602 9.40625 29.1602C8.80078 29.1602 8.20508 29.1016 7.62891 28.9844C8.83008 32.7441 12.3262 35.4785 16.4668 35.5566C13.2344 38.0957 9.15234 39.6094 4.71875 39.6094C3.95703 39.6094 3.20508 39.5605 2.46289 39.4727C6.64258 42.1875 11.6133 43.75 16.9453 43.75C34.3477 43.75 43.8594 29.3262 43.8594 16.8164C43.8594 16.4062 43.8496 15.9961 43.8301 15.5957C45.6758 14.2578 47.2773 12.5977 48.5469 10.6934C46.8477 11.4453 45.0312 11.9531 43.1172 12.1875C45.0703 11.0156 46.5742 9.16016 47.2773 6.95312C45.4512 8.03711 43.4297 8.82812 41.2715 9.24805C39.543 7.40234 37.082 6.25 34.3672 6.25Z"
+                      fill="black"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" rel="noopener" target="_blank" title="Facebook">
+                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M28.625 18.75V15.0293C28.625 13.3496 28.9961 12.5 31.6035 12.5H34.875V6.25H29.416C22.7266 6.25 20.5195 9.31641 20.5195 14.5801V18.75H16.125V25H20.5195V43.75H28.625V25H34.1328L34.875 18.75H28.625ZM32.7461 23.4375H28.7324H27.0625V24.9512V42.1875H22.082V24.9512V23.4375H20.627H17.6875V20.3125H20.627H22.082V18.7012V14.5801C22.082 12.1875 22.6094 10.5566 23.5957 9.52148C24.6895 8.34961 26.6328 7.8125 29.416 7.8125H33.3125V10.9375H31.6035C30.4316 10.9375 28.918 11.0449 27.9805 12.0801C27.1895 12.959 27.0625 14.043 27.0625 15.0195V18.6914V20.3125H28.7324H33.1172L32.7461 23.4375Z"
+                      fill="black"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-nav-menu-list-item">
+                <a href="index.html" rel="noopener" target="_blank" title="Vk">
+                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_69_317)">
+                      <path
+                        d="M41.1229 39.5207C40.5687 39.5207 39.4458 39.3894 38.1375 38.504C37.15 37.8311 36.1958 36.754 35.2729 35.7103C33.8708 34.1248 32.5291 32.6561 31.45 32.9957C29.9791 33.4603 29.6291 36.1811 29.65 37.5561C29.6479 37.6915 29.6166 38.2353 29.25 38.6269C28.975 38.9019 28.6062 39.0103 27.9104 39.0311L24.8208 39.0373C24.8229 39.0394 24.6729 39.0478 24.425 39.0478C22.8604 39.0478 17.375 38.6561 12.4937 33.629C6.20414 27.1561 0.641638 14.3665 0.585388 14.2373L0.729138 12.9144C0.739555 12.9082 0.749972 12.8998 0.758305 12.8936L1.08122 12.7332C1.48747 12.5915 1.96039 12.5811 2.07705 12.5811L9.05622 12.5373C9.24789 12.5561 9.89372 12.6769 10.3458 12.9936C10.7458 13.2936 10.9687 13.8019 10.9791 13.8248C11.0021 13.8811 12.1416 16.7353 13.6708 19.329C16.4125 24.0186 17.8687 25.6103 19.0521 24.9832C19.7875 24.5873 20.3979 22.2186 20.0916 17.8311C20.1 16.9332 19.9583 15.1603 19.3458 14.3519C18.9625 13.8332 18.3958 13.5311 17.9896 13.3686L16.6312 12.8269L17.7333 11.8686C17.8937 11.729 18.0625 11.6144 18.2333 11.529C19.1729 11.0769 20.6166 10.479 22.3854 10.479H24.8291C26.075 10.479 26.7479 10.7644 27.2875 10.9936C27.5333 11.0957 27.7479 11.1873 27.9771 11.2436C29.8854 11.6936 29.8166 13.4686 29.6916 16.6894C29.6541 17.6478 29.6104 18.7394 29.6104 19.9707C29.6104 20.2478 29.6021 20.5436 29.5937 20.8457C29.55 22.4019 29.4958 24.3061 30.5666 24.9915C31.1666 25.3644 32.4916 24.9665 35.7958 19.4123C37.3708 16.754 38.525 13.729 38.5354 13.6998C38.5666 13.6269 38.8208 13.0748 39.2041 12.8353C39.4583 12.679 39.7625 12.6478 39.975 12.6478L40.2541 12.6623L47.7916 12.604C47.7875 12.6019 48.0208 12.579 48.3333 12.579C49.4 12.579 49.8729 12.8353 49.9937 12.9123L50.2375 13.0707L50.3437 13.3436C50.7479 14.4144 49.4312 16.9623 46.4229 20.9186C45.7771 21.7644 45.2104 22.4957 44.7146 23.1311C41.3479 27.4436 41.3479 27.4436 44.9979 30.7915C48.1771 33.704 49.4687 35.5165 49.9916 36.5228C50.4229 37.2186 50.5291 37.8498 50.2812 38.3436C49.8041 39.2686 48.2583 39.3915 48.1937 39.3978L41.3375 39.5103C41.3479 39.5123 41.2562 39.5207 41.1229 39.5207ZM31.7937 31.1582C33.6312 31.1582 35.0125 32.7186 36.6125 34.5248C37.4625 35.4873 38.3416 36.479 39.1437 37.0228C40.1166 37.6811 40.9062 37.7353 41.125 37.7353V38.6269L41.1979 37.7311L48.1146 37.6144C48.2291 37.604 48.3791 37.5686 48.5104 37.5248C48.4916 37.4853 48.4666 37.4457 48.4396 37.3978C48.0354 36.6248 46.9354 34.9873 43.7937 32.104C39.4271 28.1019 39.3771 27.0644 43.3083 22.0311C43.8041 21.3998 44.3666 20.6769 45.0041 19.8373C47.3708 16.7228 48.1958 15.1123 48.4833 14.3644C48.25 14.3582 47.9625 14.3769 47.9187 14.3811L40.2083 14.4436L40.1229 14.4394C39.9541 14.9707 38.8229 17.7998 37.3312 20.3228C33.9083 26.0686 32.2208 26.8623 30.9041 26.8644C30.4354 26.8644 30.0021 26.7394 29.6146 26.4978C27.6854 25.2603 27.7562 22.6936 27.8083 20.8186C27.8187 20.5082 27.8271 20.229 27.8271 19.9665C27.8271 18.7082 27.8708 17.5936 27.9083 16.6144C28.0354 13.4082 27.9062 13.0561 27.5666 12.9769C27.2437 12.8978 26.9333 12.779 26.5958 12.6353C26.1208 12.4332 25.7146 12.2603 24.8291 12.2603H22.3854C21.5687 12.2603 20.8229 12.429 20.1916 12.6436C20.4 12.8269 20.5979 13.0394 20.775 13.2811C21.8583 14.7103 21.8812 17.279 21.875 17.779C22.2187 22.6832 21.5521 25.6582 19.8958 26.5519C19.4729 26.7769 19.0271 26.8915 18.5666 26.8915C16.6666 26.8915 15.0416 25.2082 12.1333 20.2269C10.5083 17.4748 9.34164 14.5269 9.32914 14.4978C9.25414 14.4103 9.02289 14.3311 8.90205 14.3082L2.59789 14.3603C3.93747 17.2832 8.65205 27.1165 13.7729 32.3894C18.1687 36.9123 23.0375 37.2644 24.425 37.2644C24.6125 37.2644 24.7291 37.2561 24.7583 37.254L27.8666 37.2498C27.8875 35.9727 28.1854 32.1519 30.9125 31.2957C31.1937 31.204 31.4916 31.1582 31.7937 31.1582Z"
+                        fill="black"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_69_317">
+                        <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </footer>
   </main>
 </div>
