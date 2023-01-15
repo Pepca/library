@@ -58,9 +58,9 @@
   visibility: hidden;
 
   max-width: 550px;
-  /*max-height: var(--height);*/
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-height: var(--height);
+
+  overflow: auto;
 
   transition: height 200ms ease-out, opacity 200ms ease-out, visibility 200ms ease-out;
 }
@@ -94,7 +94,7 @@
 .intro-search-recommendation-list {
   display: flex;
   align-items: center;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
 
   gap: 10px;
 

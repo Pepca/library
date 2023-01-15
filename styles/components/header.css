@@ -21,6 +21,16 @@
   gap: 20px;
 }
 
+.header-logo:focus {
+  outline: none;
+
+  color: hsl(var(--primary-yellow-color-hsl));
+}
+
+.header-logo:focus svg path {
+  fill: hsl(var(--primary-yellow-color-hsl))
+}
+
 .header-logo__icon {
   width: 65px;
   height: 65px;
@@ -55,6 +65,14 @@
   height: 50px;
 }
 
+.header-nav-list-item-link:focus {
+  outline: none;
+}
+
+.header-nav-list-item-link:focus svg path {
+  fill: hsl(var(--primary-yellow-color-hsl));
+}
+
 .header-nav-list-item-title {
   position: absolute;
   top: calc(100% - 10px);
@@ -87,4 +105,6 @@
 
     transform: translate(-50%, 0) scale(1);
   }
+
+
 }
