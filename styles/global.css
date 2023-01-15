@@ -2,6 +2,8 @@
 @import './lib.css';
 @import './components/footer.css';
 @import './components/header.css';
+@import './components/burger-menu.css';
+
 
 body {
   font-family: var(--primary-text-font-family);
@@ -56,7 +58,7 @@ body {
 
 .page-content {
   /*margin-top: 330px;*/
-  margin-top: 100vh;
+  /*margin-top: 100vh;*/
 
   display: flex;
   flex-direction: column;
@@ -67,8 +69,38 @@ body {
 }
 
 ._container {
+  width: 100%;
   max-width: var(--container-max-width);
 
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
+
+._section-title {
+  font-family: var(--primary-title-font-family);
+  font-size: var(--primary-title-font-size);
+}
+
+._yellow-button {
+  background-color: hsl(var(--primary-yellow-color-hsl));
+  border: none;
+
+  cursor: pointer;
+
+  padding: 10px 25px;
+
+  border-radius: var(--primary-border-radius);
+
+  transition: background-color 100ms ease-out;
+}
+
+._yellow-button:focus {
+  outline: var(--primary-white-outline);
+
+  background-color: hsl(var(--base-primary-yellow-color), 50%);
+}
+
+._yellow-button:active {
+  background-color: hsl(var(--base-primary-yellow-color), 45%);
+}
+

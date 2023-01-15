@@ -1,8 +1,11 @@
 :root {
   --base-default-color: 0, 0%;
+  --base-primary-yellow-color: 47, 77%;
 
   --white-color-hsl: var(--base-default-color), 100%;
   --black-color-hsl: var(--base-default-color), 0%;
+
+  --primary-yellow-color-hsl: var(--base-primary-yellow-color), 60%;
 
   --primary-text-font-family: 'Nunito', sans-serif;
   --primary-title-font-family: 'Playfair Display', serif;
@@ -17,4 +20,7 @@
   --container-max-width: calc(var(--container-width) + var(--container-padding) * 2);
 
   --primary-border-radius: 10px;
+
+  --primary-yellow-outline: 3px solid hsl(var(--primary-yellow-color-hsl));
+  --primary-white-outline: 3px solid hsl(var(--white-color-hsl));
 }

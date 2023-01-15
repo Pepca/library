@@ -1,0 +1,111 @@
+.input-element {
+  display: inline-flex;
+  align-items: center;
+  background-color: hsl(var(--white-color-hsl));
+  color: hsl(var(--black-color-hsl));
+
+  border-radius: var(--primary-border-radius);
+
+  padding: 0 5px;
+
+  font-size: var(--secondary-text-font-size);
+}
+
+.input-element:focus-within {
+  outline: var(--primary-yellow-outline);
+}
+
+.input-element-icon {
+  padding: 15px 10px;
+
+  cursor: pointer;
+
+  border-radius: inherit;
+
+  transition: background-color 100ms ease-out;
+}
+
+.input-element-icon:active {
+  background-color: hsla(var(--black-color-hsl), .15);
+}
+
+.input-element-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.input-element-input {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.input-element-input input {
+  border: none;
+  background-color: transparent;
+
+  padding: 15px 5px;
+}
+
+.input-element-input input:focus {
+  outline: none;
+}
+
+.input-element-input label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+
+  user-select: none;
+  pointer-events: none;
+
+  color: hsla(var(--black-color-hsl), .7);
+
+  transform: translate(0, -50%);
+
+  transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;
+}
+
+._not-empty .input-element-input label {
+  left: 70px;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input-element-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 10px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: inherit;
+
+  transition: background-color 100ms ease-out;
+}
+
+.input-element-button:focus {
+  outline: none;
+  background-color: hsla(var(--black-color-hsl), .1);
+}
+
+.input-element-button:active {
+  background-color: hsla(var(--black-color-hsl), .15);
+}
+
+.input-element-button span {
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+}
+
+.input-element-button span._burger-menu {
+  width: 30px;
+  height: 23px;
+}

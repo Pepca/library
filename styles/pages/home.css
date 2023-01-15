@@ -1,10 +1,43 @@
-.intro {
-}
+@import '../components/input-element.css';
 
-.intro__wrapper {
+.intro {
   display: flex;
   flex-direction: column;
 
+  min-height: 100vh;
+}
+
+.intro__wrapper {
   color: hsl(var(--white-color-hsl));
 
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.intro__title {
+  font-family: var(--primary-title-font-family);
+  font-size: var(--primary-title-font-size);
+}
+
+.intro__subtitle {
+  font-family: var(--secondary-title-font-family);
+  font-size: var(--secondary-title-font-size);
+
+  margin-bottom: 10px;
+}
+
+.intro .input-element {
+  font-size: 30px;
+}
+
+.intro-search {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
 }

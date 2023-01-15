@@ -1,0 +1,38 @@
+._burger-menu {
+  position: relative;
+}
+
+._burger-menu:after, ._burger-menu:before {
+  content: '';
+
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: hsl(var(--black-color-hsl));
+}
+
+._burger-menu:after {
+  top: 0;
+}
+
+._burger-menu:before {
+  bottom: 0;
+}
+
+._burger-menu i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: inline-block;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: hsl(var(--black-color-hsl));
+
+  transform: translate(0, -50%);
+}
