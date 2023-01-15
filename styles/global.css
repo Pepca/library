@@ -35,11 +35,11 @@ body {
 
   background-color: hsl(var(--base-default-color), 10%);
 
-  background-image: url('../assets/img/background-image.jpg');
+  /*background-image: url('../assets/img/background-image.jpg');*/
   /*background-position: left -370px;*/
-  background-position: left top;
+  /*background-position: left top;*/
 
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 
 .responsive-background-image:before {
@@ -48,7 +48,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
 
   width: 100%;
   height: 100%;
