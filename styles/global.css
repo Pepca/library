@@ -72,6 +72,10 @@ body {
   background-color: hsl(var(--white-color-hsl));
 }
 
+.page-content__wrapper {
+  padding: 70px 0;
+}
+
 ._container {
   width: 100%;
   max-width: var(--container-max-width);
@@ -81,9 +85,36 @@ body {
   padding-right: var(--container-padding);
 }
 
+._section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 100px;
+}
+
 ._section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+
   font-family: var(--primary-title-font-family);
   font-size: var(--primary-title-font-size);
+}
+
+._section-title:after {
+  content: '';
+
+  display: inline-block;
+
+  width: 300px;
+  height: 3px;
+
+  border-radius: 100px;
+
+  background-color: hsl(var(--primary-yellow-color-hsl));
 }
 
 ._yellow-button {
@@ -109,3 +140,26 @@ body {
   background-color: hsl(var(--base-primary-yellow-color), 45%);
 }
 
+._white-button {
+  color: hsl(var(--black-color-hsl));
+  background-color: hsl(var(--white-color-hsl));
+  border: none;
+
+  cursor: pointer;
+
+  padding: 10px 25px;
+
+  border-radius: var(--primary-border-radius);
+
+  transition: background-color 100ms ease-out;
+}
+
+._white-button:focus {
+  outline: var(--primary-yellow-outline);
+
+  background-color: hsl(var(--base-default-color), 95%);
+}
+
+._white-button:active {
+  background-color: hsl(var(--base-default-color), 90%);
+}

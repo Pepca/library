@@ -1,0 +1,139 @@
+.product-item {
+  --product-item-head-height: 0;
+
+  position: relative;
+
+  color: hsl(var(--white-color-hsl));
+
+  max-width: 300px;
+  max-height: 450px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  border-radius: var(--primary-border-radius);
+
+  font-size: var(--secondary-text-font-size);
+
+  background-color: hsl(var(--base-default-color), 20%);
+}
+
+.product-item-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px;
+
+  width: 100%;
+
+  box-shadow: 0 0 10px hsla(var(--black-color-hsl), .25);
+
+  background-color: hsla(var(--black-color-hsl), .15);
+  backdrop-filter: blur(3px);
+}
+
+.product-item-head:after {
+  content: '';
+
+  display: inline-block;
+
+  width: 170px;
+  height: 2px;
+
+  border-radius: 100px;
+
+  background-color: hsl(var(--white-color-hsl))
+}
+
+.product-item-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  height: calc(100% - var(--product-item-head-height));
+
+  padding: 0 20px;
+
+  background-color: hsla(var(--black-color-hsl), .15);
+  backdrop-filter: blur(3px);
+
+  transition: top 400ms ease-in-out;
+}
+
+.product-item-overlay-text {
+  display: -webkit-box;
+  max-width: inherit;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-item-overlay-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  font-size: 20px;
+
+  margin-top: auto;
+  padding-bottom: 15px;
+}
+
+.product-item-overlay-controls-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item-overlay-controls-button button {
+  flex: 0 0 30px;
+  height: 30px;
+
+  cursor: pointer;
+
+  border: none;
+
+  background-color: transparent;
+}
+
+.product-item-overlay-controls-button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.product-item:focus .product-item-overlay {
+  top: var(--product-item-head-height);
+
+  transition: top 400ms ease-out;
+
+}
+
+.product-item-overlay:focus-within {
+  top: var(--product-item-head-height);
+
+  transition: top 400ms ease-out;
+
+}
+
+@media screen and (min-width: 992px) {
+  .product-item:hover .product-item-overlay {
+    top: var(--product-item-head-height);
+
+    transition: top 400ms ease-out;
+
+  }
+}
