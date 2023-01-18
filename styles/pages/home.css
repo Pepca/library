@@ -130,8 +130,6 @@
 
 .top-year-product-slider-container {
   overflow: hidden;
-
-  max-width: calc(300px * 3 + 60px * 2);
 }
 
 .top-year-product-slider-container-track {
