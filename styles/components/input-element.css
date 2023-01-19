@@ -1,9 +1,15 @@
 .input-element {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   background-color: hsl(var(--white-color-hsl));
   color: hsl(var(--black-color-hsl));
 
+  width: 100%;
+  max-width: 500px;
+
+  /*flex: 0 1 500px;*/
+
+  border: 1px solid hsla(var(--black-color-hsl), .2);
   border-radius: var(--primary-border-radius);
 
   padding: 0 5px;
@@ -37,11 +43,15 @@
 .input-element-input {
   position: relative;
 
+  width: 100%;
+
   display: flex;
   align-items: center;
 }
 
 .input-element-input input {
+  width: 100%;
+
   border: none;
   background-color: transparent;
 
@@ -55,7 +65,7 @@
 .input-element-input label {
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 7px;
 
   user-select: none;
   pointer-events: none;
@@ -64,7 +74,7 @@
 
   transform: translate(0, -50%);
 
-  transition: left 100ms ease-out, opacity 100ms ease-out, visibility 100ms ease-out;
+  transition: left 150ms ease-in-out, opacity 150ms ease-in-out, visibility 150ms ease-in-out;
 }
 
 ._not-empty .input-element-input label {
@@ -72,6 +82,9 @@
 
   opacity: 0;
   visibility: hidden;
+
+  transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;
+
 }
 
 .input-element-button {

@@ -6,12 +6,20 @@
 
 
 body {
+  --scrollbar-width: 17px;
+
   font-family: var(--primary-text-font-family);
   font-size: var(--primary-text-font-family);
 
   min-height: 100vh;
 
   overflow-x: hidden;
+  /*overflow: hidden;*/
+}
+
+body._lock-scroll {
+  padding-right: var(--scrollbar-width);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -89,8 +97,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  gap: 100px;
 }
 
 ._section-title {
@@ -102,6 +108,8 @@ body {
 
   font-family: var(--primary-title-font-family);
   font-size: var(--primary-title-font-size);
+
+  margin-bottom: 70px;
 }
 
 ._section-title:after {
@@ -162,4 +170,33 @@ body {
 
 ._white-button:active {
   background-color: hsl(var(--base-default-color), 90%);
+}
+
+._transparent-text-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  padding: 10px 25px;
+
+  border-radius: var(--primary-border-radius);
+
+  margin-bottom: 60px;
+  font-size: var(--primary-text-font-size);
+
+  transition: background-color 200ms ease;
+}
+
+._transparent-text-button:focus {
+  background-color: hsla(var(--primary-yellow-color-hsl), .25);
+}
+
+@media screen and (min-width: 992px) {
+  ._transparent-text-button:hover {
+    background-color: hsla(var(--primary-yellow-color-hsl), .25);
+  }
+}
+
+._transparent-text-button:active {
+  background-color: hsla(var(--primary-yellow-color-hsl), .6);
 }

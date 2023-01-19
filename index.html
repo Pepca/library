@@ -16,10 +16,51 @@
   <script src="scripts/input-recommendation.js" defer></script>
   <script src="scripts/drop-down.js" defer></script>
   <script src="scripts/slider.js" defer></script>
+  <script src="scripts/popup.js" defer></script>
   <title>Библиотека</title>
 </head>
 <body>
 <div class="wrapper">
+  <div class="popup" data-popup id="catalog-filters">
+    <div class="popup-content" data-popup-content>
+      <form action="index.html" class="catalog-filters-form _form">
+        <h2 class="catalog-filters-form__title _form-title">Фильтры</h2>
+        <div class="catalog-filters-form-inputs _form-inputs">
+          <div class="input-element" data-input-element>
+            <div class="input-element-input">
+              <label for="genre">Жанр</label>
+              <input type="text" id="genre" name="genre" data-input-element-input title="Жанр">
+            </div>
+          </div>
+          <div class="input-element" data-input-element>
+            <div class="input-element-input">
+              <label for="category">Категория</label>
+              <input type="text" id="category" name="category" data-input-element-input title="Категория">
+            </div>
+          </div>
+          <div class="input-element" data-input-element>
+            <div class="input-element-input">
+              <label for="year">Год</label>
+              <input type="number" id="year" name="year" data-input-element-input title="Год">
+            </div>
+          </div>
+          <div class="input-element" data-input-element>
+            <div class="input-element-input">
+              <label for="author">Автор</label>
+              <input type="text" id="author" name="author" data-input-element-input title="Автор">
+            </div>
+          </div>
+          <div class="input-element" data-input-element>
+            <div class="input-element-input">
+              <label for="price">Цена</label>
+              <input type="number" id="price" name="price" data-input-element-input title="Цена">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  а
   <div class="responsive-background-image">
     <picture>
       <source srcset="assets/img/background-image.webp" type="image/webp"></source>
@@ -1081,6 +1122,9 @@
           </section>
           <section class="catalog _section">
             <h1 class="catalog__title _section-title">Каталог</h1>
+            <button class="catalog-filters-button _transparent-text-button" type="button"
+                    data-popup-button="catalog-filters">Фильтровать товар
+            </button>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="product-item" tabindex="0">

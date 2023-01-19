@@ -1,3 +1,11 @@
+.catalog__title {
+  margin-bottom: 20px;
+}
+
+.catalog-filters-button {
+  margin-bottom: 60px;
+}
+
 .catalog-list {
   width: 100%;
 
@@ -6,3 +14,4 @@
   justify-content: center;
   gap: 50px;
 }
+
