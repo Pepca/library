@@ -1,0 +1,8 @@
+.catalog-list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 50px;
+}

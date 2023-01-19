@@ -16,13 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function slideLeft(track, trackGap, items, slidesInView) {
     let dataIndex = parseInt(track.getAttribute('data-slider-track'))
 
-    if (dataIndex === 1) dataIndex = items.length - 1
+    if (dataIndex !== 1) {
+      const prevItemWidth = items[dataIndex - 2].offsetWidth + trackGap
 
-    const prevItemWidth = items[dataIndex].offsetWidth + trackGap
+      track.style.transform = `translateX(-${prevItemWidth * (dataIndex - 2)}px)`
 
-    track.style.transform = `translateX(-${prevItemWidth * (dataIndex - (slidesInView - 1))}px)`
+      return track.setAttribute('data-slider-track', dataIndex - 1)
+    }
 
-    track.setAttribute('data-slider-track', dataIndex - 1)
+    const prevItemWidth = items[items.length - 1].offsetWidth + trackGap
+
+    track.style.transform = `translateX(-${prevItemWidth * ((items.length - 1) - (slidesInView - 1))}px)`
+
+    track.setAttribute('data-slider-track', items.length - (slidesInView - 1))
   }
 
   if (sliders.length) {

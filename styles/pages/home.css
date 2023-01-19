@@ -1,5 +1,13 @@
 @import '../components/input-element.css';
 @import '../components/product-item.css';
+@import '../components/catalog.css';
+
+.home-page__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 100px;
+}
 
 .intro {
   display: flex;
@@ -134,7 +142,7 @@
 
 .top-year-product-slider-container-track {
   display: flex;
-  gap: 60px;
+  gap: 50px;
 
   transition: transform 600ms ease;
 }
@@ -154,13 +162,62 @@
   border: none;
   background-color: transparent;
 
-
   transition: background-color 150ms ease-out;
 }
 
-
 .top-year-product-slider-button._arrow-right button {
   transform: rotate(180deg);
+}
+
+.last-news-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 100px;
+}
+
+.last-news-item {
+  display: flex;
+
+  gap: 60px;
+}
+
+.last-news-item__img {
+  flex: 0 0 300px;
+
+  border-radius: var(--primary-border-radius);
+}
+
+.last-news-item__img img {
+  border-radius: inherit;
+
+  object-fit: cover;
+}
+
+.last-news-item-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.last-news-item-content__title {
+  font-family: var(--primary-title-font-family);
+  font-size: var(--secondary-title-font-size);
+}
+
+.last-news-item-content__text {
+  font-size: var(--primary-text-font-size);
+
+  line-height: 1.4;
+}
+
+.last-news-item:nth-child(2n) .last-news-item__img {
+  order: 2;
+}
+
+.last-news-item:nth-child(2n) .last-news-item-content {
+  text-align: right;
 }
 
 @media screen and (min-width: 992px) {

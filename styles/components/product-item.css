@@ -1,6 +1,4 @@
 .product-item {
-  --product-item-head-height: 0;
-
   position: relative;
 
   color: hsl(var(--white-color-hsl));
