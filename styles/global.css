@@ -126,6 +126,7 @@ body._lock-scroll {
 }
 
 ._yellow-button {
+  color: hsl(var(--white-color-hsl));
   background-color: hsl(var(--primary-yellow-color-hsl));
   border: none;
 
@@ -133,9 +134,11 @@ body._lock-scroll {
 
   padding: 10px 25px;
 
+  font-size: var(--secondary-text-font-size);
+
   border-radius: var(--primary-border-radius);
 
-  transition: background-color 100ms ease-out;
+  transition: background-color 100ms ease;
 }
 
 ._yellow-button:focus {
@@ -159,7 +162,7 @@ body._lock-scroll {
 
   border-radius: var(--primary-border-radius);
 
-  transition: background-color 100ms ease-out;
+  transition: background-color 100ms ease;
 }
 
 ._white-button:focus {
@@ -181,8 +184,7 @@ body._lock-scroll {
 
   border-radius: var(--primary-border-radius);
 
-  margin-bottom: 60px;
-  font-size: var(--primary-text-font-size);
+  font-size: var(--secondary-text-font-size);
 
   transition: background-color 200ms ease;
 }

@@ -93,7 +93,7 @@
 
   transform: translate(-50%, 0) scale(0.9);
 
-  transition: opacity 150ms ease-out, visibility 150ms ease-out, top 150ms ease-out, transform 150ms ease-out;
+  transition: opacity 200ms ease, visibility 200ms ease, top 200ms ease, transform 200ms ease;
 }
 
 @media screen and (min-width: 992px) {

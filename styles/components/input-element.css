@@ -28,7 +28,7 @@
 
   border-radius: inherit;
 
-  transition: background-color 100ms ease-out;
+  transition: background-color 100ms ease;
 }
 
 .input-element-icon:active {
@@ -74,7 +74,7 @@
 
   transform: translate(0, -50%);
 
-  transition: left 150ms ease-in-out, opacity 150ms ease-in-out, visibility 150ms ease-in-out;
+  transition: left 200ms ease, opacity 200ms ease, visibility 200ms ease;
 }
 
 ._not-empty .input-element-input label {
@@ -83,7 +83,7 @@
   opacity: 0;
   visibility: hidden;
 
-  transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;
+  /*transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;*/
 
 }
 
@@ -99,7 +99,7 @@
   cursor: pointer;
   border-radius: inherit;
 
-  transition: background-color 100ms ease-out;
+  transition: background-color 100ms ease;
 }
 
 .input-element-button:focus {

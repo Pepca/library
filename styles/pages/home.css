@@ -73,7 +73,7 @@
 
   overflow: auto;
 
-  transition: height 200ms ease-out, opacity 200ms ease-out, visibility 200ms ease-out;
+  transition: height 300ms ease, opacity 300ms ease, visibility 300ms ease;
 }
 
 .intro-search-recommendation::-webkit-scrollbar {
@@ -124,7 +124,7 @@
 
   font-size: 18px;
 
-  transition: background-color 150ms ease-out;
+  transition: background-color 150ms ease;
 }
 
 .intro-search-recommendation-item button:focus {
@@ -164,7 +164,7 @@
   border: none;
   background-color: transparent;
 
-  transition: background-color 150ms ease-out;
+  transition: background-color 150ms ease;
 }
 
 .top-year-product-slider-button._arrow-right button {
@@ -221,6 +221,22 @@
 .last-news-item:nth-child(2n) .last-news-item-content {
   text-align: right;
 }
+
+.catalog-filters-button {
+  margin-bottom: 60px;
+  font-size: var(--primary-text-font-size);
+}
+
+.catalog-filters-form-controls {
+  gap: 10px;
+}
+
+.catalog-filters-form-controls button[type=reset] {
+  color: hsla(var(--black-color-hsl), .3);
+
+}
+
+
 
 @media screen and (min-width: 992px) {
   .intro-search-recommendation-item button:hover {

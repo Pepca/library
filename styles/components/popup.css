@@ -22,7 +22,7 @@
   background-color: hsla(var(--black-color-hsl), .6);
   backdrop-filter: blur(5px);
 
-  transition: opacity 150ms ease, visibility 150ms ease;
+  transition: opacity 200ms ease, visibility 200ms ease;
 }
 
 .popup._open-popup {
@@ -43,7 +43,7 @@
 
   transform: translateY(-100px) scale(0.8);
 
-  transition: transform 150ms ease;
+  transition: transform 300ms ease;
 }
 
 ._open-popup .popup-content {

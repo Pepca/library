@@ -17,13 +17,14 @@
   <script src="scripts/drop-down.js" defer></script>
   <script src="scripts/slider.js" defer></script>
   <script src="scripts/popup.js" defer></script>
+  <script src="scripts/form.js" defer></script>
   <title>Библиотека</title>
 </head>
 <body>
 <div class="wrapper">
   <div class="popup" data-popup id="catalog-filters">
     <div class="popup-content" data-popup-content>
-      <form action="index.html" class="catalog-filters-form _form">
+      <form action="index.html" class="catalog-filters-form _form" data-form>
         <h2 class="catalog-filters-form__title _form-title">Фильтры</h2>
         <div class="catalog-filters-form-inputs _form-inputs">
           <div class="input-element" data-input-element>
@@ -57,10 +58,14 @@
             </div>
           </div>
         </div>
+        <div class="catalog-filters-form-controls _form-controls">
+          <button type="reset" class="_transparent-text-button" title="Сбросить фильтры">Сбросить фильтры</button>
+          <button type="submit" class="_yellow-button" title="Применить">Применить</button>
+        </div>
       </form>
     </div>
   </div>
-  а
+
   <div class="responsive-background-image">
     <picture>
       <source srcset="assets/img/background-image.webp" type="image/webp"></source>
@@ -1123,7 +1128,7 @@
           <section class="catalog _section">
             <h1 class="catalog__title _section-title">Каталог</h1>
             <button class="catalog-filters-button _transparent-text-button" type="button"
-                    data-popup-button="catalog-filters">Фильтровать товар
+                    data-popup-button="catalog-filters" title="Фильтровать товар">Фильтровать товар
             </button>
             <ul class="catalog-list">
               <li class="catalog-item">

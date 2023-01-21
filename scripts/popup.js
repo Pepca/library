@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function _unlockScroll() {
-    setTimeout(() => document.body.classList.remove('_lock-scroll'), 150)
+    setTimeout(() => document.body.classList.remove('_lock-scroll'), 300)
   }
 
   function openPopup(targetPopup) {
@@ -40,8 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (popupButtons.length && popups.length) {
     popups.forEach(popup => {
-      const content = popup.querySelector('[data-popup-content]')
-
       popup.addEventListener('click', (event) => {
         if (!event.target.closest('[data-popup-content]')) closePopup(event.currentTarget)
       })
