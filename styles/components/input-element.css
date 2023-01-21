@@ -102,6 +102,18 @@
   transition: background-color 100ms ease;
 }
 
+.input-element-button[data-input-element-hide-password] ._hide-password-icon {
+  display: none;
+}
+
+._show-password .input-element-button[data-input-element-hide-password] ._hide-password-icon {
+  display: block;
+}
+
+._show-password .input-element-button[data-input-element-hide-password] ._show-password-icon {
+  display: none;
+}
+
 .input-element-button:focus {
   outline: none;
   background-color: hsla(var(--black-color-hsl), .1);

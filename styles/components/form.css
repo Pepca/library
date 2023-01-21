@@ -23,6 +23,7 @@
 ._form-inputs {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   gap: 20px;
 }
@@ -31,6 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   gap: 20px;
 }
@@ -39,3 +41,10 @@
   flex-direction: row;
 }
 
+._info-link {
+  font-size: var(--secondary-text-font-size);
+}
+
+._info-link a {
+  color: hsl(var(--primary-yellow-color-hsl));
+}

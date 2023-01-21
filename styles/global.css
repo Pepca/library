@@ -69,19 +69,22 @@ body._lock-scroll {
 }
 
 .page-content {
-  /*margin-top: 330px;*/
-  /*margin-top: 100vh;*/
-
   display: flex;
   flex-direction: column;
-
-  /*min-height: 100vh;*/
 
   background-color: hsl(var(--white-color-hsl));
 }
 
+.page-content._margin-top {
+  margin-top: 330px;
+}
+
 .page-content__wrapper {
   padding: 70px 0;
+}
+
+._translate-top .page-content__wrapper {
+  margin-top: -150px;
 }
 
 ._container {
