@@ -41,7 +41,7 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-list-item">
-            <a href="index.html" class="header-nav-list-item-link" title="Корзина">
+            <a href="index.html" class="header-nav-list-item-link" title="Каталог">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_53_85)">
                   <path
@@ -58,7 +58,7 @@
                 </defs>
               </svg>
             </a>
-            <div class="header-nav-list-item-title">Корзина</div>
+            <div class="header-nav-list-item-title">Каталог</div>
           </li>
           <li class="header-nav-list-item">
             <a href="index.html" class="header-nav-list-item-link" title="Избранное">
@@ -131,7 +131,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="login">Логин</label>
-                  <input type="text" id="login" name="login" data-input-element-input title="Логин">
+                  <input type="text" id="login" required name="login" data-input-element-input title="Логин">
                 </div>
               </div>
               <div class="input-element" data-input-element>
@@ -144,7 +144,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="telephone">Номер телефона</label>
-                  <input type="tel" id="telephone" name="telephone" data-input-element-input title="Номер телефона">
+                  <input type="tel" required pattern="^[0-9\+]+$" id="telephone" name="telephone" data-input-element-input title="Номер телефона">
                 </div>
               </div>
               <div class="input-element" data-input-element>
@@ -165,7 +165,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="email">Эл. почта</label>
-                  <input type="email" id="email" name="email" data-input-element-input title="Эл. почта">
+                  <input type="email" id="email" required name="email" data-input-element-input title="Эл. почта">
                 </div>
               </div>
               <div class="input-element" data-input-element>
@@ -178,7 +178,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="password">Пароль</label>
-                  <input type="password" id="password" name="password" data-input-element-input title="Пароль">
+                  <input type="password" id="password" minlength="6" required name="password" data-input-element-input title="Пароль">
                 </div>
                 <button type="button" class="input-element-button _show-password"
                         title="Изменить видимость пароля" data-input-element-hide-password>
@@ -224,7 +224,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="repeat-password">Повторите пароль</label>
-                  <input type="password" id="repeat-password" name="repeat-password" data-input-element-input
+                  <input type="password" id="repeat-password" required minlength="6" name="repeat-password" data-input-element-input
                          title="Повторите пароль">
                 </div>
                 <button type="button" class="input-element-button _show-password"
@@ -265,7 +265,7 @@
             <div class="register-form-checkboxes _form-checkboxes">
               <div class="checkbox-element">
                 <label for="terms" class="checkbox-element-label" title="Пользовательское соглашение">
-                  <input type="checkbox" id="terms" name="terms">
+                  <input type="checkbox" id="terms" required name="terms">
                   <span class="checkbox-element-icon">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path
                       d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="white" stroke-width="2" stroke-linecap="round"

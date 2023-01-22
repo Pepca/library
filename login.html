@@ -41,7 +41,7 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-list-item">
-            <a href="index.html" class="header-nav-list-item-link" title="Корзина">
+            <a href="index.html" class="header-nav-list-item-link" title="Каталог">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_53_85)">
                   <path
@@ -58,7 +58,7 @@
                 </defs>
               </svg>
             </a>
-            <div class="header-nav-list-item-title">Корзина</div>
+            <div class="header-nav-list-item-title">Каталог</div>
           </li>
           <li class="header-nav-list-item">
             <a href="index.html" class="header-nav-list-item-link" title="Избранное">
@@ -131,7 +131,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="login">Логин</label>
-                  <input type="text" id="login" name="login" data-input-element-input title="Логин">
+                  <input type="text" id="login" required name="login" data-input-element-input title="Логин">
                 </div>
               </div>
 
@@ -145,7 +145,8 @@
                 </label>
                 <div class="input-element-input">
                   <label for="password">Пароль</label>
-                  <input type="password" id="password" name="password" data-input-element-input title="Пароль">
+                  <input type="password" id="password" required minlength="6" name="password" data-input-element-input
+                         title="Пароль">
                 </div>
                 <button type="button" class="input-element-button _show-password"
                         title="Изменить видимость пароля" data-input-element-hide-password>

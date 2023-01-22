@@ -43,7 +43,7 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-list-item">
-            <a href="index.html" class="header-nav-list-item-link" title="Корзина">
+            <a href="index.html" class="header-nav-list-item-link" title="Каталог">
               <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_53_85)">
                   <path
@@ -60,7 +60,7 @@
                 </defs>
               </svg>
             </a>
-            <div class="header-nav-list-item-title">Корзина</div>
+            <div class="header-nav-list-item-title">Каталог</div>
           </li>
           <li class="header-nav-list-item">
             <a href="index.html" class="header-nav-list-item-link" title="Избранное">
@@ -133,7 +133,8 @@
                 </label>
                 <div class="input-element-input">
                   <label for="personal-data">ФИО</label>
-                  <input type="text" id="personal-data" name="personal-data" data-input-element-input
+                  <input type="text" id="personal-data" name="personal-data" pattern="[A-Za-zА-Яа-яЁё]{2,}\s[A-Za-zА-Яа-яЁё]{2,}" required
+                         data-input-element-input
                          title="Фамилия Имя Отчество">
                 </div>
               </div>
@@ -154,7 +155,7 @@
                 </label>
                 <div class="input-element-input">
                   <label for="email">Эл. почта</label>
-                  <input type="email" id="email" name="email" data-input-element-input
+                  <input type="email" id="email" name="email" required data-input-element-input
                          title="Электронная почта">
                 </div>
               </div>
@@ -198,7 +199,7 @@
               </div>
               <div class="textarea-element" data-textarea-element>
                 <label for="details">Опишите проблему подробнее</label>
-                <textarea name="details" id="details" title="Опишите проблему подробнее"
+                <textarea name="details" id="details" required title="Опишите проблему подробнее"
                           data-textarea-element-textarea></textarea>
               </div>
             </div>
