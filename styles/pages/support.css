@@ -1,0 +1,8 @@
+@import '../components/form.css';
+@import '../components/input-element.css';
+
+.support-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

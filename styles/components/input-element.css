@@ -1,4 +1,7 @@
 .input-element {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   align-items: center;
   background-color: hsl(var(--white-color-hsl));
@@ -82,9 +85,6 @@
 
   opacity: 0;
   visibility: hidden;
-
-  /*transition: left 150ms ease-out, opacity 150ms ease-out, visibility 150ms ease-out;*/
-
 }
 
 .input-element-button {
@@ -114,6 +114,14 @@
   display: none;
 }
 
+.input-element-button[data-input-element-toggle-select-menu-button] svg {
+  transition: transform 150ms ease;
+}
+
+._open-select-menu .input-element-button[data-input-element-toggle-select-menu-button] svg {
+  transform: rotate(180deg);
+}
+
 .input-element-button:focus {
   outline: none;
   background-color: hsla(var(--black-color-hsl), .1);
@@ -133,4 +141,83 @@
 .input-element-button span._burger-menu {
   width: 30px;
   height: 23px;
+}
+
+.input-element-select-menu {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+  font-size: 20px;
+
+  background-color: hsl(var(--base-primary-yellow-color), 95%);
+
+  border-radius: var(--primary-border-radius);
+
+  box-shadow: 0 0 10px hsl(var(--black-color-hsl), .25);
+
+  overflow: auto;
+
+  transform: scale(0.8);
+
+  transition: opacity 300ms ease, visibility 300ms ease, transform 300ms ease, top 300ms ease;
+}
+
+._open-select-menu .input-element-select-menu {
+  top: 110%;
+
+  opacity: 1;
+  visibility: visible;
+
+  transform: scale(1);
+}
+
+.input-element-select-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.input-element-select-menu::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: hsl(var(--primary-yellow-color-hsl))
+}
+
+.input-element-select-menu-list {
+  max-height: 140px;
+}
+
+.input-element-select-menu-list-item button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  text-align: left;
+
+  padding: 10px 15px;
+
+  width: 100%;
+
+  transition: background-color 150ms ease;
+}
+
+.input-element-select-menu-list-item button:focus {
+  outline: none;
+
+  background-color: hsl(var(--base-primary-yellow-color), 90%);
+}
+
+@media screen and (min-width: 992px) {
+  .input-element-select-menu-list-item button:hover {
+    background-color: hsl(var(--base-primary-yellow-color), 90%);
+  }
+}
+
+
+.input-element-select-menu-list-item button:active {
+  background-color: hsl(var(--base-primary-yellow-color), 85%);
 }
