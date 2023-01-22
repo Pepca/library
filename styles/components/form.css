@@ -41,8 +41,16 @@
   flex-direction: row;
 }
 
+._form-extra-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-size: 18px;
+}
+
 ._info-link {
-  font-size: var(--secondary-text-font-size);
+  font-size: 18px;
 }
 
 ._info-link a {

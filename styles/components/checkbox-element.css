@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
 
-  font-size: var(--secondary-text-font-size);
+  font-size: 18px;
 
   padding: 5px;
 }
