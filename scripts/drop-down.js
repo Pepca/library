@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
   const dropDownButtons = document.querySelectorAll('[data-drop-down]')
 
   function clickDropDownButtonHandler(element, event) {
@@ -17,4 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
       dropDownButton.addEventListener('click', clickDropDownButtonHandler.bind(null, element))
     })
   }
-})

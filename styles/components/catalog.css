@@ -1,8 +1,6 @@
 .catalog__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-
-
 
 .catalog-list {
   width: 100%;
@@ -11,5 +9,9 @@
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
   gap: 50px;
+}
+
+.catalog-pagination {
+  margin-top: 60px;
 }
 

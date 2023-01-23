@@ -222,6 +222,10 @@
   text-align: right;
 }
 
+.catalog__title {
+  margin-bottom: 20px;
+}
+
 .catalog-filters-button {
   margin-bottom: 60px;
   font-size: var(--primary-text-font-size);
@@ -233,10 +237,7 @@
 
 .catalog-filters-form-controls button[type=reset] {
   color: hsla(var(--black-color-hsl), .3);
-
 }
-
-
 
 @media screen and (min-width: 992px) {
   .intro-search-recommendation-item button:hover {

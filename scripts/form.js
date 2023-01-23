@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('[data-form]')
 
   function resetFormHandler(inputElements) {
@@ -14,4 +13,3 @@ document.addEventListener('DOMContentLoaded', () => {
       form.addEventListener('reset', resetFormHandler.bind(null, inputElements))
     })
   }
-})
