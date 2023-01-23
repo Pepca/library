@@ -73,6 +73,8 @@ body._lock-scroll {
   flex-direction: column;
 
   background-color: hsl(var(--white-color-hsl));
+
+  border-radius: 60px 60px 0 0;
 }
 
 .page-content._margin-top {
@@ -80,6 +82,8 @@ body._lock-scroll {
 }
 
 .page-content__wrapper {
+
+
   padding: 70px 0;
 }
 
