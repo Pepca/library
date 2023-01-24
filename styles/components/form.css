@@ -28,6 +28,12 @@
   gap: 20px;
 }
 
+._form-inputs-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 ._form-controls {
   display: flex;
   flex-direction: column;

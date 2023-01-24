@@ -61,6 +61,11 @@
   padding: 15px 5px;
 }
 
+.input-element-input input::-webkit-inner-spin-button, .input-element-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .input-element-input input:focus {
   outline: none;
 }

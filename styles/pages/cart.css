@@ -1,0 +1,31 @@
+@import '../components/popup.css';
+@import '../components/form.css';
+@import '../components/quantity.css';
+@import '../components/product-list-item.css';
+@import '../components/input-element.css';
+@import '../components/checkbox-element.css';
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  width: 100%;
+}
+
+.quantity input {
+  font-size: var(--secondary-text-font-size);
+}
+
+.quantity-button svg {
+  width: 40px;
+  height: 40px;
+}
+
+.cart__button {
+  width: 100%;
+
+  text-align: right;
+
+  margin-top: 50px;
+}
