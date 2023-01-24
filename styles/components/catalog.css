@@ -15,3 +15,11 @@
   margin-top: 60px;
 }
 
+.catalog-button {
+  margin-top: 40px;
+}
+
+.catalog-button a {
+  font-size: var(--primary-text-font-size);
+}
+

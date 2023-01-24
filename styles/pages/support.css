@@ -1,6 +1,6 @@
-@import '../components/form.css';
-@import '../components/input-element.css';
-@import '../components/textarea-element.css';
+@import '../components/form.min.css';
+@import '../components/input-element.min.css';
+@import '../components/textarea-element.min.css';
 
 .support-page__wrapper {
   display: flex;

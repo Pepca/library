@@ -1,7 +1,7 @@
-@import '../components/form.css';
-@import '../components/input-element.css';
-@import '../components/catalog.css';
-@import '../components/product-item.css';
+@import '../components/form.min.css';
+@import '../components/input-element.min.css';
+@import '../components/catalog.min.css';
+@import '../components/product-item.min.css';
 
 .profile-page__wrapper {
   display: flex;

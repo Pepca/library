@@ -1,0 +1,1 @@
+.catalog__title {margin-bottom: 40px;}.catalog-list {width: 100%;display: grid;grid-template-columns: repeat(auto-fit, 300px);justify-content: center;gap: 50px;}.catalog-pagination {margin-top: 60px;}.catalog-button {margin-top: 40px;}.catalog-button a {font-size: var(--primary-text-font-size);}

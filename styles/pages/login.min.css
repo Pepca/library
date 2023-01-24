@@ -1,0 +1,1 @@
+@import '../components/form.min.css';@import '../components/input-element.min.css';@import '../components/checkbox-element.min.css';.login-page__wrapper {display: flex;flex-direction: column;align-items: center;}

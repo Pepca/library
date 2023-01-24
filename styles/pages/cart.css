@@ -1,9 +1,9 @@
-@import '../components/popup.css';
-@import '../components/form.css';
-@import '../components/quantity.css';
-@import '../components/product-list-item.css';
-@import '../components/input-element.css';
-@import '../components/checkbox-element.css';
+@import '../components/popup.min.css';
+@import '../components/form.min.css';
+@import '../components/quantity.min.css';
+@import '../components/product-list-item.min.css';
+@import '../components/input-element.min.css';
+@import '../components/checkbox-element.min.css';
 
 .cart-list {
   display: flex;

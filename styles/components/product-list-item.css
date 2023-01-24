@@ -43,6 +43,10 @@
   font-size: var(--secondary-title-font-size);
 }
 
+.product-list-item-content-head-title span {
+  color: hsl(var(--primary-yellow-color-hsl));
+}
+
 .product-list-item-content-head-button {
   cursor: pointer;
   background-color: transparent;

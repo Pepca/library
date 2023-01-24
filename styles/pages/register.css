@@ -1,6 +1,6 @@
-@import '../components/form.css';
-@import '../components/input-element.css';
-@import '../components/checkbox-element.css';
+@import '../components/form.min.css';
+@import '../components/input-element.min.css';
+@import '../components/checkbox-element.min.css';
 
 .register-page__wrapper {
   display: flex;

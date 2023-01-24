@@ -1,8 +1,8 @@
-@import './var.css';
-@import './lib.css';
-@import './components/footer.css';
-@import './components/header.css';
-@import './components/burger-menu.css';
+@import './var.min.css';
+@import './lib.min.css';
+@import './components/footer.min.css';
+@import './components/header.min.css';
+@import './components/burger-menu.min.css';
 
 
 body {
